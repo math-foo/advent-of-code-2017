@@ -1,0 +1,413 @@
+ProgramState { program_counter: 0, send_counter: 0, buffer: [], registers: {'p': 0}, waiting: false, code_length: 41 }
+Set('i', Value(31))
+ProgramState { program_counter: 0, send_counter: 0, buffer: [], registers: {'p': 1}, waiting: false, code_length: 41 }
+Set('i', Value(31))
+execute!
+ProgramState { program_counter: 1, send_counter: 0, buffer: [], registers: {'i': 31, 'p': 0}, waiting: false, code_length: 41 }
+Set('a', Value(1))
+ProgramState { program_counter: 1, send_counter: 0, buffer: [], registers: {'i': 31, 'p': 1}, waiting: false, code_length: 41 }
+Set('a', Value(1))
+execute!
+ProgramState { program_counter: 2, send_counter: 0, buffer: [], registers: {'i': 31, 'a': 1, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('p', Value(17))
+ProgramState { program_counter: 2, send_counter: 0, buffer: [], registers: {'a': 1, 'i': 31, 'p': 1}, waiting: false, code_length: 41 }
+Multiply('p', Value(17))
+execute!
+ProgramState { program_counter: 3, send_counter: 0, buffer: [], registers: {'i': 31, 'a': 1, 'p': 0}, waiting: false, code_length: 41 }
+Jump('p', Register('p'))
+ProgramState { program_counter: 3, send_counter: 0, buffer: [], registers: {'a': 1, 'i': 31, 'p': 17}, waiting: false, code_length: 41 }
+Jump('p', Register('p'))
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 31, 'a': 1, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 20, send_counter: 0, buffer: [], registers: {'a': 1, 'i': 31, 'p': 17}, waiting: false, code_length: 41 }
+Jump('a', Value(3))
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 31, 'a': 2, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 23, send_counter: 0, buffer: [], registers: {'a': 1, 'i': 31, 'p': 17}, waiting: false, code_length: 41 }
+Set('f', Value(0))
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 30, 'a': 2, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 24, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 31, 'p': 17}, waiting: false, code_length: 41 }
+Set('i', Value(126))
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 30, 'a': 2, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: false, code_length: 41 }
+Recover('a')
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 30, 'a': 4, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 29, 'a': 4, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 29, 'a': 4, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 29, 'a': 8, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 28, 'a': 8, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 28, 'a': 8, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 28, 'a': 16, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 27, 'a': 16, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 27, 'a': 16, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 27, 'a': 32, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 26, 'a': 32, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 26, 'a': 32, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 26, 'a': 64, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 25, 'a': 64, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 25, 'a': 64, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 25, 'a': 128, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 24, 'a': 128, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 24, 'a': 128, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 24, 'a': 256, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 23, 'a': 256, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 23, 'a': 256, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 23, 'a': 512, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 22, 'a': 512, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 22, 'a': 512, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 22, 'a': 1024, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 21, 'a': 1024, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 21, 'a': 1024, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 21, 'a': 2048, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 20, 'a': 2048, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 20, 'a': 2048, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 20, 'a': 4096, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 19, 'a': 4096, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 19, 'a': 4096, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 19, 'a': 8192, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 18, 'a': 8192, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 18, 'a': 8192, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 18, 'a': 16384, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 17, 'a': 16384, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 17, 'a': 16384, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 17, 'a': 32768, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 16, 'a': 32768, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 16, 'a': 32768, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 16, 'a': 65536, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 15, 'a': 65536, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 15, 'a': 65536, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 15, 'a': 131072, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 14, 'a': 131072, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 14, 'a': 131072, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 14, 'a': 262144, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 13, 'a': 262144, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 13, 'a': 262144, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 13, 'a': 524288, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 12, 'a': 524288, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 12, 'a': 524288, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 12, 'a': 1048576, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 11, 'a': 1048576, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 11, 'a': 1048576, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 11, 'a': 2097152, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 10, 'a': 2097152, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 10, 'a': 2097152, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 10, 'a': 4194304, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 9, 'a': 4194304, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 9, 'a': 4194304, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 9, 'a': 8388608, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 8, 'a': 8388608, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 8, 'a': 8388608, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 8, 'a': 16777216, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 7, 'a': 16777216, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 7, 'a': 16777216, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 7, 'a': 33554432, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 6, 'a': 33554432, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 6, 'a': 33554432, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 6, 'a': 67108864, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 5, 'a': 67108864, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 5, 'a': 67108864, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 5, 'a': 134217728, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 4, 'a': 134217728, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 4, 'a': 134217728, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 4, 'a': 268435456, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 3, 'a': 268435456, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 3, 'a': 268435456, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 3, 'a': 536870912, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 2, 'a': 536870912, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 2, 'a': 536870912, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 2, 'a': 1073741824, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 1, 'a': 1073741824, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 4, send_counter: 0, buffer: [], registers: {'i': 1, 'a': 1073741824, 'p': 0}, waiting: false, code_length: 41 }
+Multiply('a', Value(2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 5, send_counter: 0, buffer: [], registers: {'i': 1, 'a': 2147483648, 'p': 0}, waiting: false, code_length: 41 }
+Add('i', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 6, send_counter: 0, buffer: [], registers: {'i': 0, 'a': 2147483648, 'p': 0}, waiting: false, code_length: 41 }
+Jump('i', Value(-2))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 7, send_counter: 0, buffer: [], registers: {'i': 0, 'a': 2147483648, 'p': 0}, waiting: false, code_length: 41 }
+Add('a', Value(-1))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 8, send_counter: 0, buffer: [], registers: {'i': 0, 'a': 2147483647, 'p': 0}, waiting: false, code_length: 41 }
+Set('i', Value(127))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 9, send_counter: 0, buffer: [], registers: {'i': 127, 'a': 2147483647, 'p': 0}, waiting: false, code_length: 41 }
+Set('p', Value(618))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+ProgramState { program_counter: 10, send_counter: 0, buffer: [], registers: {'i': 127, 'a': 2147483647, 'p': 618}, waiting: false, code_length: 41 }
+Multiply('p', Value(8505))
+ProgramState { program_counter: 25, send_counter: 0, buffer: [], registers: {'f': 0, 'a': 1, 'i': 126, 'p': 17}, waiting: true, code_length: 41 }
+execute!
+0
